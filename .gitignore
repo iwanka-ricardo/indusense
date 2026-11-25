@@ -1,0 +1,22 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+*.py[cod]
+
+# Configuration locale et secrets
+.env
+
+
+# Virtual environments
+.venv
+.venv/
+
+# Fichiers temporaires Jupyter
+.ipynb_checkpoints/
+
+# Métadonnées d’éditeur
+.vscode/
