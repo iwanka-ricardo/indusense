@@ -10,6 +10,11 @@ wheels/
 # Configuration locale et secrets
 .env
 
+# Données sources (contiennent des données personnelles) : jamais dans Git
+# Seuls les échantillons anonymisés de data/samples/ sont versionnés
+data/*
+!data/samples/
+
 
 # Virtual environments
 .venv
