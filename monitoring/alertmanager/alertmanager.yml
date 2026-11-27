@@ -1,0 +1,12 @@
+# Alertmanager : centralisation des alertes.
+# Récepteur sans canal pour l'instant (alertes visibles dans l'UI :9093).
+# Ajouter ici un canal (email, Slack…) ; les secrets restent hors Git.
+route:
+  receiver: default
+  group_by: ["alertname"]
+  group_wait: 30s
+  group_interval: 5m
+  repeat_interval: 4h
+
+receivers:
+  - name: default
