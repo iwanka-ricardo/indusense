@@ -1,0 +1,11 @@
+groups:
+  - name: indusense
+    rules:
+      - alert: IndusenseApiDown
+        expr: up{job="indusense-api"} == 0
+        for: 1m
+        labels:
+          severity: warning
+        annotations:
+          summary: "L'API Indusense ne répond plus"
+          description: "Prometheus n'arrive plus à collecter {{ $labels.instance }} depuis 1 minute."
